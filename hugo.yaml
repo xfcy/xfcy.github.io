@@ -1,0 +1,50 @@
+baseURL: https://pages.cyouth.cn/
+languageCode: en-us
+title: CYouth Blog
+theme: PaperMod
+enableEmoji: true
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: development
+  title: CYouth Blog
+  description: The homepage and blog for CYouth to share technology and more.
+  keywords: [CYouth, Homepage, Blog, Technology, Sharing]
+  author: CYouth
+  mainSections:
+    - posts
+  homeInfoParams:
+    Title: CYouth Blog
+    Content: >
+      :smile: Hi there! 
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+    - identifier: archive
+      name: Archive
+      url: /archives/
+      weight: 40
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 50
